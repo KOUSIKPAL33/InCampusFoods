@@ -1,0 +1,100 @@
+[
+  {
+    "Id": "i1",
+    "Image": "image/bread-omelette.webp",
+    "Name": "Bread Omelette",
+    "Category": "Tiffin",
+    "Price": 40
+  },
+  {
+    "Id": "i10",
+    "Image": "image/veg-noodles.webp",
+    "Name": "Veg Noodles",
+    "Category": "Fast Food",
+    "Price": 60
+  },
+  {
+    "Id": "i11",
+    "Image": "image/chicken-egg-fried-rice.jpg",
+    "Name": "Chicken Egg Fried Rice",
+    "Category": "Fast Food",
+    "Price": 70
+  },
+  {
+    "Id": "i12",
+    "Image": "image/egg-noodles.jpg",
+    "Name": "Egg Noodles",
+    "Category": "Fast Food",
+    "Price": 70
+  },
+  {
+    "Id": "i13",
+    "Image": "image/chicken-manchurian.jpg",
+    "Name": "Chicken Manchurian",
+    "Category": "Fast Food",
+    "Price": 120
+  },
+  {
+    "Id": "i14",
+    "Image": "image/Chicken-Fried-Rice.jpg",
+    "Name": "Chicken Fried Rice",
+    "Category": "Fast Food",
+    "Price": 100
+  },
+  {
+    "Id": "i2",
+    "Image": "image/masala-dosa.webp",
+    "Name": "Masala Dosa",
+    "Category": "Tiffin",
+    "Price": 40
+  },
+  {
+    "Id": "i3",
+    "Image": "image/onion-rava-dosa.webp",
+    "Name": "Onion Rava Dosa",
+    "Category": "Tiffin",
+    "Price": 40
+  },
+  {
+    "Id": "i4",
+    "Image": "image/onion-masala.jpg",
+    "Name": "Onion Masala",
+    "Category": "Tiffin",
+    "Price": 50
+  },
+  {
+    "Id": "i5",
+    "Image": "image/parota.webp",
+    "Name": "Parota",
+    "Category": "Tiffin",
+    "Price": 50
+  },
+  {
+    "Id": "i6",
+    "Image": "image/Plain-Dosa.jpg",
+    "Name": "Plain Dosa",
+    "Category": "Tiffin",
+    "Price": 40
+  },
+  {
+    "Id": "i7",
+    "Image": "image/rava-dosa.jpg",
+    "Name": "Ravva Dosa",
+    "Category": "Tiffin",
+    "Price": 40
+  },
+  {
+    "Id": "i8",
+    "Image": "image/Veg-Manchurian.webp",
+    "Name": "Veg Manchurian",
+    "Category": "Fast Food",
+    "Price": 70
+  },
+  {
+    "Id": "i9",
+    "Image": "image/ve-fried-rice.webp",
+    "Name": "Veg Fried Rice",
+    "Category": "Fast Food",
+    "Price": 60
+  }
+]

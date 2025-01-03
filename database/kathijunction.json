@@ -1,0 +1,114 @@
+[
+ {
+   "Id": "k1",
+   "Image": "image/Aloo-roll.webp",
+   "Name": "Aloo Roll",
+   "Category":"Veg Roll",
+   "Price": 35
+ },
+ {
+   "Id": "k10",
+   "Image": "image/double-egg-roll.jpg",
+   "Name": "Double Egg Roll",
+   "Category":"Non Veg Roll",
+   "Price": 45
+ },
+ {
+   "Id": "k11",
+   "Image": "image/egg-keema-roll.jpg",
+   "Name": "Egg Keema Roll",
+   "Category":"Non Veg Roll",
+   "Price": 90
+ },
+ {
+   "Id": "k12",
+   "Image": "image/chicken-roll.jpeg",
+   "Name": "Chicken Roll",
+   "Category":"Non Veg Roll",
+   "Price": 65
+ },
+ {
+   "Id": "k13",
+   "Image": "image/chicken-keema-roll.jpg",
+   "Name": "Chicken Keema Roll",
+   "Category":"Non Veg Roll",
+   "Price": 80
+ },
+ {
+   "Id": "k14",
+   "Image": "image/chilli-chicken-roll.jpg",
+   "Name": "Chilli Chicken Roll",
+   "Category":"Non Veg Roll",
+   "Price": 90
+ },
+ {
+   "Id": "k15",
+   "Image": "image/egg-chicken-roll.jpg",
+   "Name": "Egg Chicken Roll",
+   "Category":"Non Veg Roll",
+   "Price": 80
+ },
+ {
+   "Id": "k16",
+   "Image": "image/double-egg-chicken-roll.jpg",
+   "Name": "ouble Chicken Roll",
+   "Category":"Non Veg Roll",
+   "Price": 90
+ },
+ {
+   "Id": "k2",
+   "Image": "image/paneer-roll.jpg",
+   "Name": "Paneer Roll",
+   "Category":"Veg Roll",
+   "Price": 60
+ },
+ {
+   "Id": "k3",
+   "Image": "image/mashroom-roll.webp",
+   "Name": "Mashroom roll",
+   "Category":"Veg Roll",
+   "Price": 60
+ },
+ {
+   "Id": "k4",
+   "Image": "image/panner-cheese-roll.webp",
+   "Name": "Paneer Cheese Roll",
+   "Category":"Veg Roll",
+   "Price": 80
+ },
+ {
+   "Id": "k5",
+   "Image": "image/egg-paneer-roll.jpg",
+   "Name": "Egg Paneer Roll",
+   "Category":"Veg Roll",
+   "Price": 80
+ },
+ {
+   "Id": "k6",
+   "Image": "image/double-egg-paneer-role.webp",
+   "Name": "Double Egg Paneer Roll",
+   "Category":"Veg Roll",
+   "Price": 90
+ },
+ {
+   "Id": "k7",
+   "Image": "image/cheese-roll.avif",
+   "Name": "Cheese Roll",
+   "Category":"Veg Roll",
+   "Price": 70
+ },
+ {
+   "Id": "k8",
+   "Image": "image/egg-aloo-roll.jpg",
+   "Name": "Egg Aloo Roll",
+   "Category":"Veg Roll",
+   "Price": 50
+ },
+ {
+   "Id": "k9",
+   "Image": "image/egg-roll.jpg",
+   "Name": "Egg  Roll",
+   "Category":"Veg Roll",
+   "Price": 35
+ }
+]

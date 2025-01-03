@@ -1,0 +1,107 @@
+[  
+  {
+    "Id": 2,
+    "Image": "image/vegbiryani.jpg",
+    "Name": "Veg Biryani",
+    "Category":"Biryani",
+    "Price": 90
+  },
+  {
+    "Id": 3,
+    "Image": "image/cheese-omelettes.jpg",
+    "Name": "Cheese Omelettes",
+    "Category":"Omelettes",
+    "Price": 50
+  },
+  {
+    "Id": 4,
+    "Image": "image/chicken-omelletes.jpg",
+    "Name": "Chicken Omelettes",
+    "Category":"Omelettes",
+    "Price": 70
+  },
+  {
+    "Id": 5,
+    "Image": "image/veg-fried-rice.jpg",
+    "Name": "Veg Fried Rice",
+    "Category":"Fried_Rice",
+    "Price": 60
+  },
+  {
+    "Id": 6,
+    "Image": "image/egg-fried-rice.jpg",
+    "Name": "Egg Fried Rice",
+    "Category":"Fried_Rice",
+    "Price": 70
+  },
+  {
+    "Id": 7,
+    "Image": "image/Chicken-Fried-Rice.webp",
+    "Name": "Chicken Fried Rice",
+    "Category":"Fried_Rice",
+    "Price": 80
+  },
+  {
+    "Id": 8,
+    "Image": "image/paneer-fried-rice.jpg",
+    "Name": "Paneer Fried Rice",
+    "Category":"Fried_Rice",
+    "Price": 80
+  },
+  {
+    "Id": 9,
+    "Image": "image/chickenBiryani.jpg",
+    "Name": "Chicken Biryani",
+    "Category":"Biryani",
+    "Price": 100
+  },
+  {
+    "Id": 10,
+    "Image": "image/chicken-biryabi-boneless.jpg",
+    "Name": "Chicken Biryani Boneless",
+    "Category":"Biryani",
+    "Price": 115
+  },
+  {
+    "Id": 11,
+    "Image": "image/veg-noodles.jpg",
+    "Name": "Veg noodles",
+    "Category":"Noodles",
+    "Price": 60
+  },
+  {
+    "Id": 12,
+    "Image": "image/Egg-noodles.webp",
+    "Name": "Egg noodles",
+    "Category":"Noodles",
+    "Price": 70
+  },
+  {
+    "Id": 13,
+    "Image": "image/Paneer-Noodles.webp",
+    "Name": "Paneer Noodles",
+    "Category":"Noodles",
+    "Price": 80
+  },
+  {
+    "Id": 14,
+    "Image": "image/chicken-noodles.jpg",
+    "Name": "Chicken Noodles",
+    "Category":"Noodles",
+    "Price": 80
+  },
+  {
+    "Id": 15,
+    "Image": "image/masala-omelettes.webp",
+    "Name": "Masala Omelettes",
+    "Category":"Omelettes",
+    "Price": 35
+  },
+  {
+    "Id": 16,
+    "Image": "image/bread-omelettes.jpg",
+    "Name": "Bread Omelettes",
+    "Category":"Omelettes",
+    "Price": 40
+  }
+]
