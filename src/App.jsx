@@ -16,8 +16,6 @@ function App() {
       <div>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
-          <Route exact path='/login' element={<Login/>}/>
-          <Route exact path='/signup' element={<Signup/>}/>
           <Route exact path='/yummpy' element={<Yummpy/>}/>
           <Route exact path='/ifc_c' element={<Ifc_c/>}/>
           <Route exact path='/kathijunction' element={<Kathijunction/>}/>

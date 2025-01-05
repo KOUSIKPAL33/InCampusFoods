@@ -8,13 +8,14 @@ function Card(props) {
     const cardstyle = "card " + styles.myzoom;
     const btnStyle = "btn btn-primary " + styles.my_btn;
 
-    // Function to handle adding product to cart
     async function handleCart() {
         try {
-            const token = localStorage.getItem('authToken'); // Retrieve the token from local storage (or wherever it's stored)
+            const token = localStorage.getItem('authToken');
 
             if (!token) {
-                toast.error('You must be logged in to add items to the cart.');
+                toast.error('You must be logged in to add items to the cart.',{
+                    position:"top-center"
+                });
                 return;
             }
 
@@ -27,9 +28,7 @@ function Card(props) {
                     price: props.price,
                 }
             };
-            //console.log(productDetails);
 
-            // Send a request to the backend API to add the product to the cart
             const response = await axios.post('http://localhost:5000/api/cart/create',
                 productDetails,
                 {
@@ -43,7 +42,6 @@ function Card(props) {
             
 
         } catch (error) {
-            // Check if error response status is 400 (duplicate item in cart)
             if (error.response && error.response.status === 400 && error.response.data.message === "Item already in cart") {
             toast.info('Item is already in the cart.');
             } else {
@@ -51,6 +49,8 @@ function Card(props) {
             toast.error('Something went wrong. Please try again.');
             }
         }
+        //window.location.reload();
+
     }
 
     return (

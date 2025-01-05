@@ -5,8 +5,8 @@ const  {addToCartItemController, deleteCartItemQtyController, getCartItemControl
 
 
 cartRouter.post('/create',auth,addToCartItemController);
-cartRouter.get("/get",auth,getCartItemController);
+cartRouter.get('/get',auth,getCartItemController);
 cartRouter.put('/update-qty',auth,updateCartItemQtyController);
-cartRouter.delete('/delete-cart-item',auth,deleteCartItemQtyController);
+cartRouter.delete('/delete',auth,deleteCartItemQtyController);
 
 module.exports = cartRouter;

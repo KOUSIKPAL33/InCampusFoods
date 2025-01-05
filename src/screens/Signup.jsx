@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link,useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from 'react-toastify';
 
 
-function Signup() {
+function Signup({onSignupSuccess,switchToLogin}) {
     const [credentials, setcredentials] = useState({ name: "", email: "", password: "", mobileno: "" })
     let navigate = useNavigate();
     const handleSubmit = async (e) => {
@@ -25,9 +26,15 @@ function Signup() {
             const json = responseText ? JSON.parse(responseText) : {};
 
             if (!json.success) {
-                alert("Enter valid Credentials.");
+                toast.info("Enter valid Credentials.",{
+                    theme:"light",
+                    position:"top-center"
+                })
             }else{
-                alert("Registration Successfull");
+                toast.success("Registration Successfull",{
+                    position:"top-center",
+                    theme:"colored"
+                })
                 setcredentials({
                     name:"",
                     email:"",
@@ -35,6 +42,7 @@ function Signup() {
                     mobileno:"",
                 });
                 navigate("/");
+                onSignupSuccess()
             }
         } catch (error) {
             console.error("Error during submission:", error);
@@ -46,7 +54,10 @@ function Signup() {
         setcredentials({ ...credentials, [event.target.name]: event.target.value })
     }
     return (
-        <div className='container mt-5'>
+        <>
+            <ToastContainer/>
+            <div className='container'>
+                <h1 className='text-center'>Signup Form</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
@@ -67,9 +78,13 @@ function Signup() {
                 </div>
 
                 <button type="submit" className="btn btn-success">Submit</button>
-                <Link to={"/login"} className='m-3 btn btn-danger' >Already a user</Link>
+                <Link className="m-3 btn btn-primary" onClick={switchToLogin}>
+                    Already a user?
+                </Link>
             </form>
         </div>
+        </>
+        
     )
 }
 
