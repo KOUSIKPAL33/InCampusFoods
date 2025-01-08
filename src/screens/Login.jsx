@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 function Login({ onLoginSuccess,switchToSignup }) {
@@ -30,7 +30,11 @@ function Login({ onLoginSuccess,switchToSignup }) {
       } else {
         localStorage.setItem("isLoggedIn", true);
         localStorage.setItem("authToken", json.token);
-        onLoginSuccess(); // Notify parent about the login success
+        toast.success("Login Successful",{
+          theme:"colored",
+          position:"top-center"
+        })
+        onLoginSuccess();
       }
     } catch (error) {
       console.error("Error during submission:", error);
@@ -44,7 +48,6 @@ function Login({ onLoginSuccess,switchToSignup }) {
 
   return (
     <div className="container">
-      <ToastContainer />
       <h1 className="text-center">Login Form</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">

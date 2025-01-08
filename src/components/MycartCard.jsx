@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Style.module.css';
+import styles from './cart.module.css';
 import axios from 'axios';
 
 function MycartCard(props) {

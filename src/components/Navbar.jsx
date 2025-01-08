@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Login from "../screens/Login";
 import Signup from "../screens/Signup";
 import styles from "./Navbar.module.css";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -31,6 +31,8 @@ const Navbar = () => {
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
     setShowModal(false);
+
+    
     navigate("/");
   };
 
@@ -65,12 +67,9 @@ const Navbar = () => {
 
   return (
     <>
-      <ToastContainer/>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-1 fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand fs-2 m-0 p-0" to="/">
-          InCampusFood
-        </Link>
+        <Link className="navbar-brand fs-2 m-0 p-0" to="/">InCampusFood</Link>
 
         <button
           className="navbar-toggler"
@@ -86,27 +85,10 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link className="nav-link active fs-5" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link fs-5" to="/yummpy">
-                Yummpy
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link fs-5" to="/ifc_c">
-                Ifc-c
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link fs-5" to="/kathijunction">
-                Kathijunction
-              </Link>
-            </li>
-          </ul>
+            <li className="nav-item"><Link className="nav-link active fs-5" to="/">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link fs-5" to="/yummpy">Yummpy</Link></li>
+            <li className="nav-item"><Link className="nav-link fs-5" to="/ifc_c">Ifc-c</Link></li>
+            <li className="nav-item"><Link className="nav-link fs-5" to="/kathijunction">Kathijunction</Link> </li></ul>
 
           {!isLoggedIn ? (
             <div className="d-flex">
@@ -129,9 +111,7 @@ const Navbar = () => {
                   {userName.split(" ")[0].trim()}
                 </li>
                 <li className="position-relative">
-                  <Link className="btn btn-outline-light me-2" to="/Mycart">
-                    Cart
-                  </Link>
+                  <Link className="btn btn-outline-light me-2" to="/Mycart">Cart</Link>
                   <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {cartValue}
                     <span className="visually-hidden">unread messages</span>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import axios from 'axios';
 import MycartCard from './MycartCard';
-import styles from './Style.module.css';
+import styles from './cart.module.css';
 import { ToastContainer,toast } from 'react-toastify';
 
 function Mycart() {

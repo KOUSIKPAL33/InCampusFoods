@@ -1,29 +1,20 @@
 const express = require('express');
 const routers = express.Router();
-const { body, validationResult } = require('express-validator');
 const user = require('../models/user');
 const auth=require("../middleware/auth.js")
 const jwt = require('jsonwebtoken');
+const bcrypt =require("bcryptjs");
+const saltRounds=10;
 
-// Middleware to authenticate token
-// Create User
 routers.post("/createuser",
-    [
-        body('name').isLength({ min: 5 }),
-        body('email').isEmail(),
-        body('password').isLength({ min: 5 }),
-    ],
     async (req, res) => {
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
-        }
-
         try {
+            const salt = bcrypt.genSaltSync(saltRounds);
+            const hashpassword = bcrypt.hashSync(req.body.password, salt);
             await user.create({
                 name: req.body.name,
                 email: req.body.email,
-                password: req.body.password,
+                password: hashpassword,
                 mobileno: req.body.mobileno,
             });
             res.json({ success: true });
@@ -36,20 +27,13 @@ routers.post("/createuser",
 
 // Login User
 routers.post("/loginuser",
-    [
-        body('email').isEmail(),
-        body('password').isLength({ min: 5 }),
-    ],
     async (req, res) => {
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
-        }
-
         try {
             const { email } = req.body;
             let userData = await user.findOne({ email });
-            if (!userData || req.body.password !== userData.password) {
+           
+
+            if (!userData || !bcrypt.compareSync(req.body.password, userData.password)) {
                 return res.status(400).json({ errors: "Invalid credentials" });
             }
 
